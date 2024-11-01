@@ -22,35 +22,18 @@ transform_data <- function(data) {
 result1 <- transform_data(cars)
 result1
 ```
+rmarkdown::render("C:/Users/16607/Local/Exercise1/Exercise1.Rmd")
 
-## 2 generate an HTML file
-   rmarkdown::render("C:/Users/16607/Local/Exercise1/Exercise1.Rmd")
-
-```{bash}
-git add Exercise1.Rmd Exercise1.html
-git commit -m "add first simple function adn HTML output"
-git push origin main
-```
-
-## 3 second function
-```{bash}
-git checkout -b dev
-```
 
 ```{r second function}
 #define a second simple function that takes a dataset as input
-transform_data_v2 <- function(data) {
+transform_data_v2 <- function(data_new) {
   #subtract 1 from each element in the dataset
-  transformed_data_v2 <- data - 1
+  transform_data_v2 <- data_new - 1
   return(transformed_data_v2)
 }
-# test the function with the built-in dataset 'cars'
+# Test the function with the built-in dataset 'cars'
 result2 <- transform_data_v2(cars)
 result2
 ```
-
-```R
-rmarkdown::render("C:/Users/16607/Local/Exercise1/Exercise1.Rmd")
-```
-
 
