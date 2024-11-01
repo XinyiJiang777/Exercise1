@@ -39,9 +39,9 @@ git checkout -b dev
 
 ```{r second function}
 #define a second simple function that takes a dataset as input
-transform_data_v2 < - function(data) {
+transform_data_v2 <- function(data) {
   #subtract 1 from each element in the dataset
-  transform_data_v2 < - data - 1
+  transformed_data_v2 <- data - 1
   return(transformed_data_v2)
 }
 # test the function with the built-in dataset 'cars'
@@ -50,6 +50,7 @@ result2
 ```
 
 ```R
-rmarkdown::render("Exercise1.Rmd")
+rmarkdown::render("C:/Users/16607/Local/Exercise1/Exercise1.Rmd")
+```
 
 
