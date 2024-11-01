@@ -39,9 +39,9 @@ git checkout -b dev
 
 ```{r second function}
 #define a second simple function that takes a dataset as input
-transform_data_v2 < - function(data) {
+transform_data_v2 < - function(data_new) {
   #subtract 1 from each element in the dataset
-  transform_data_v2 < - data - 1
+  transform_data_v2 < - data_new - 1
   return(transformed_data_v2)
 }
 # Test the function with the built-in dataset 'cars'
