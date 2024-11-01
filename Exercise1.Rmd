@@ -1,0 +1,25 @@
+---
+title: "Exercise1"
+author: "Xinyi Jiang"
+date: "2024-11-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1 first function
+```{r first function}
+#define a simple function that takes a dataset as input
+transform_data <- function(data) {
+  #add 1 to each element in the dataset
+  transformed_data <- data + 1
+  return(transformed_data)
+}
+
+#test the function with the built-in dataset 'cars'
+result1 <- transform_data(cars)
+result1
+```
+
