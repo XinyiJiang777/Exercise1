@@ -425,9 +425,9 @@ result1</code></pre>
 <h2>2 generate an HTML file</h2>
 <p>rmarkdown::render(“C:/Users/16607/Local/Exercise1/Exercise1.Rmd”)</p>
 <pre class="r"><code>#define a second simple function that takes a dataset as input
-transform_data_v2 &lt;- function(data) {
+transform_data_v2 &lt;- function(data_new) {
   #subtract 1 from each element in the dataset
-  transformed_data_v2 &lt;- data - 1
+  transformed_data_v2 &lt;- data_new - 1
   return(transformed_data_v2)
 }
 # test the function with the built-in dataset &#39;cars&#39;
